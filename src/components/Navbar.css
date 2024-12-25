@@ -1,0 +1,34 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Mobile Navbar (Show Hamburger Menu on Small Screens) */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
